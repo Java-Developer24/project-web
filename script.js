@@ -48,7 +48,7 @@ async function fetchGuideData() {
         } while (!winnerGuide || winners.has(winnerGuide.id));
 
         winners.add(winnerGuide.id);
-        const prize = winners.size === 1 ? "Pulsar Bike" : "Activa";
+        const prize = winners.size === 1 ? " Bike" : "Activa";
         resultDisplay.textContent = `Winner ${winners.size}: ${winnerGuide.name} with ticket number ${ticket}. Won the Prize: ${prize}`;
       });
 
